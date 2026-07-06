@@ -38,7 +38,7 @@ main {
 }
 
 .new-button {
-    --button-offset: 100px;
+    --button-offset: 20px;
     --button-size: 70px;
     position: fixed;
     background: red;
@@ -47,8 +47,8 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: calc(100vw - var(--button-offset));
-    margin-top: calc(100vh - var(--button-offset));
+    bottom: var(--button-offset);
+    right: var(--button-offset);
     border-radius: 100%;
     font-size: 40px;
     color: white;
