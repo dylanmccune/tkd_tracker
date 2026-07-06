@@ -36,3 +36,21 @@ body {
 main {
     margin-left: calc(var(--nav-size) + 10px);
 }
+
+.new-button {
+    --button-offset: 100px;
+    --button-size: 70px;
+    position: fixed;
+    background: red;
+    width: var(--button-size);
+    height: var(--button-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: calc(100vw - var(--button-offset));
+    margin-top: calc(100vh - var(--button-offset));
+    border-radius: 100%;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+}
