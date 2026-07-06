@@ -1,3 +1,7 @@
+:root {
+    --nav-size: 250px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,12 +16,23 @@ body {
 }
 
 .sidebar {
-    width: 250px;
+    width: var(--nav-size);
     border-right: 2px #111 solid;
     height: 100vh;
     position: fixed;
+    padding: 20px;
+}
+
+.nav-header {
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.nav-items {
+    list-style: none;
 }
 
 main {
-    margin-left: 260px;
+    margin-left: calc(var(--nav-size) + 10px);
 }
