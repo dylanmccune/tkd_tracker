@@ -1,5 +1,5 @@
 const logButton = document.getElementById("log-button")
-const popupWraper = document.getElementById("popup-wrapper")
+const popupWrapper = document.getElementById("popup-wrapper")
 const closeButton = document.getElementById("close-button")
 const logPopup = document.getElementById("log-popup")
 
@@ -7,7 +7,7 @@ logButton.addEventListener("click", (event) => {
     showPopup();
 });
 
-popupWraper.addEventListener("click", (event) => {
+popupWrapper.addEventListener("click", (event) => {
     hidePopup();
 });
 
@@ -20,9 +20,9 @@ logPopup.addEventListener("click", (event) => {
 })
 
 function showPopup() {
-    popupWraper.style.display = "block";
+    popupWrapper.style.display = "block";
 };
 
 function hidePopup() {
-    popupWraper.style.display = "none";
+    popupWrapper.style.display = "none";
 };
