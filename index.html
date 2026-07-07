@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TKD Tracker</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
@@ -115,9 +116,11 @@
     </main>
     <a href="#" class="new-button" title="Log new entry">
         <!-- Button to log a new practice journal entry or smth -->
-        <!-- TODO: Replace with an icon sometime -->
-        <div>+</div>
+        <i data-lucide="plus"></i>
     </a>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 
 </html>
