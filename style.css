@@ -48,11 +48,23 @@ main {
 
 .card {
     background: #191919;
-    height: 128px;
     border-radius: var(--card-radius);
     padding: 24px;
     font-size: 32px;
     border: 1px solid #262626;
+}
+
+.avatar {
+    background: var(--color-accent);
+    height: calc(100% - 5px);
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+}
+
+.card-greeting {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .new-button {
