@@ -5,6 +5,8 @@
     --color-accent: #1b4332;
     --color-accent-hover: #2d6a4f;
     --card-radius: 10px;
+    --color-card: #191919;
+    --card-border: 1px solid #262626;
 }
 
 * {
@@ -15,7 +17,6 @@
 }
 
 body {
-    display: block;
     background: var(--color-body);
     color: #fff;
 }
@@ -47,11 +48,11 @@ main {
 }
 
 .card {
-    background: #191919;
+    background: var(--color-card);
     border-radius: var(--card-radius);
     padding: 24px;
     font-size: 32px;
-    border: 1px solid #262626;
+    border: var(--card-border);
 }
 
 .avatar {
@@ -98,4 +99,43 @@ main {
 
 .new-button:hover svg {
     transform: scale(1.05);
+}
+
+.popup-wrapper {
+    /* for now until i figure out how to do js just go into inspect element and change the css to hide and show */
+    display: block;
+    position: fixed;
+    background-color: #000000bb;
+    backdrop-filter: blur(4px);
+    width: 100%;
+    height: 100%;
+    inset: 0;
+}
+
+.log-popup {
+    inset: 96px 200px;
+    position: fixed;
+    background: var(--color-card);
+    padding: 36px;
+    border: var(--card-border);
+    border-radius: var(--card-radius);
+}
+
+.popup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-form input, .popup-form select {
+    max-width: 200px;
+    background-color: #000;
+    color: #fff;
+    padding: 8px;
+    border: var(--card-border);
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+.popup-form label {
+    margin-bottom: 8px;
 }

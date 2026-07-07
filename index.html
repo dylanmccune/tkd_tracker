@@ -40,6 +40,22 @@
         <!-- Button to log a new practice journal entry or smth -->
         <i data-lucide="plus"></i>
     </a>
+
+    <div class="popup-wrapper" id="popup">
+        <div class="log-popup">
+            <form class="popup-form">
+                <label for="date">Date: </label>
+                <input type="date" id="date" name="date">
+                <label for="lesson-type">Lesson type: </label>
+                <select name="lesson-type" id="lesson-type">
+                    <option value="class">Regular class</option>
+                    <option value="sparring">Sparring</option>
+                    <option value="at-home">At-home practice</option>
+                    <option value="conditioning">Conditioning/stretching</option>
+                </select>
+            </form>
+        </div>
+    </div>
     <script>
         lucide.createIcons();
     </script>
