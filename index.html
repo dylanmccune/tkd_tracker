@@ -45,14 +45,17 @@
         <div class="log-popup">
             <form class="popup-form">
                 <label for="date">Date: </label>
-                <input type="date" id="date" name="date">
+                <input type="date" id="date" name="date" class="input-small">
                 <label for="lesson-type">Lesson type: </label>
-                <select name="lesson-type" id="lesson-type">
+                <select name="lesson-type" id="lesson-type" class="input-small">
                     <option value="class">Regular class</option>
                     <option value="sparring">Sparring</option>
                     <option value="at-home">At-home practice</option>
                     <option value="conditioning">Conditioning/stretching</option>
                 </select>
+                <label for="notes">Notes: </label>
+                <textarea type="text" id="notes" name="notes"></textarea>
+                <input type="submit" value="Log notes" class="input-small">
             </form>
         </div>
     </div>
