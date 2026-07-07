@@ -36,14 +36,17 @@
             <!-- lots of room on the right side of this for more stuff -->
         </article>
     </main>
-    <a href="#" class="new-button" title="Log new entry">
+    <a href="#" class="new-button" title="Log new entry" id="log-button">
         <!-- Button to log a new practice journal entry or smth -->
         <i data-lucide="plus"></i>
     </a>
 
-    <div class="popup-wrapper" id="popup">
-        <div class="log-popup">
+    <div class="popup-wrapper" id="popup-wrapper">
+        <div class="log-popup" id="log-popup">
             <form class="popup-form">
+                <div class="form-header">
+                    <i id="close-button" data-lucide="x"></i>
+                </div>
                 <label for="date">Date: </label>
                 <input type="date" id="date" name="date" class="input-small">
                 <label for="lesson-type">Lesson type: </label>
@@ -62,6 +65,7 @@
     <script>
         lucide.createIcons();
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>

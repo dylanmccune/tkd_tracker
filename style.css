@@ -102,7 +102,6 @@ main {
 }
 
 .popup-wrapper {
-    /* for now until i figure out how to do js just go into inspect element and change the css to hide and show */
     display: block;
     position: fixed;
     background-color: #000000bb;
@@ -258,8 +257,7 @@ main {
 }
 
 .popup-wrapper {
-    /* for now until i figure out how to do js just go into inspect element and change the css to hide and show */
-    display: block;
+    display: none;
     position: fixed;
     background-color: #000000bb;
     backdrop-filter: blur(4px);
@@ -278,10 +276,15 @@ main {
     overflow-y: auto;
 }
 
+.log-popup svg {
+    position: fixed;
+}
+
 .popup-form {
     display: flex;
     flex-direction: column;
     font-size: 16px;
+    overflow-y: auto;
 }
 
 input {
@@ -309,4 +312,13 @@ textarea {
 
 .popup-form label {
     margin-bottom: 8px;
+}
+
+.form-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#close-button {
+    cursor: pointer;
 }
