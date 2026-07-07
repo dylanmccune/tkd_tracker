@@ -17,14 +17,16 @@ body {
 
 .sidebar {
     width: var(--nav-size);
-    border-right: 2px #111 solid;
-    height: 100vh;
     position: fixed;
-    padding: 20px;
+    padding: 30px;
+    background: #000;
+    inset: 10px;
+    border-radius: 30px;
+    border: 1px solid #333;
 }
 
 .nav-header {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 300;
     margin-bottom: 10px;
 }
@@ -57,4 +59,8 @@ main {
 .new-button svg {
     width: 40px;
     height: 40px;
+}
+
+.nav-container {
+    /* padding: 10px; */
 }
